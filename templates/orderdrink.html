@@ -1,0 +1,22 @@
+{%  include 'base.html'  %}
+
+{%  block title  %}
+    <title>Order</title>
+{%  endblock  %}
+{%  block link  %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/order.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/select.css') }}">
+{%  endblock  %}
+{%  block content  %}
+    <h1 style="text-align: center; padding-top: 50px; color: #7E3517">{{ drink.drink }}</h1>
+    <div style="text-align: center">
+        <h2 style="color: #7E3517">Payable: {{ drink.price }}</h2>
+        <p>Enter your number card:</p>
+        <input type="text" placeholder="Enter your card's number">
+        <p>Enter your table number:</p>
+        <input type="number" max="17" min="1" placeholder="Table">
+    </div>
+    <form action="{{ url_for('index2') }}" method="get">
+        <a href="{{ url_for('index2', order_number=order_number) }}"><button class="button">Complete</button></a>
+    </form>
+{%  endblock  %}

@@ -1,0 +1,14 @@
+
+.button {
+    display: inline-block;
+    background: #A0522D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 725px;
+    margin-top: 10px;
+}
+
+p {
+    color: #7E3517
+}

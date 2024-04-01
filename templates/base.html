@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{%  block title  %} {%  endblock  %}
+{%  block link  %} {%  endblock  %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/basestyle.css') }}">
+</head>
+<body bgcolor="#DEB887">
+    <div class="flex">
+        <p class="menu">Home</p>
+        <a href="{{  url_for('index')  }}"><p class="menu">Menu</p></a>
+        <p class="menu">About Us</p>
+    </div>
+    <hr>
+    {%  block content  %} {%  endblock  %}
+</body>
+</html>

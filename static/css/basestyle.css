@@ -1,0 +1,15 @@
+.flex {
+   display: flex;
+   justify-content: space-between;
+   width: 300px;
+   margin-left: 580px;
+}
+
+hr {
+  border-color: #A0522D;
+}
+
+.menu {
+  color: #7E3517;
+  font-size: 18px
+}

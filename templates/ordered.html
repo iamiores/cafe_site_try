@@ -1,0 +1,13 @@
+{%  include 'base.html'  %}
+
+{%  block title  %}
+    <title>Wait</title>
+{%  endblock  %}
+{%  block link  %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/select.css') }}">
+{%  endblock  %}
+{%  block content  %}
+  <h1 style="text-align: center; color: #7E3517; padding-top: 50px">Payed successfully!</h1>
+  <h2 style="text-align: center; color: #7E3517">Your order have been placed:)</h2>
+  <h3 style="text-align: center; color: #7E3517">Order's number: {{ order_number.id }}</h3>
+{%  endblock  %}

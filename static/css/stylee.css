@@ -1,0 +1,18 @@
+.column{
+    width: 300px;
+    float: left;
+    margin-left: 170px;
+    margin-top: 20px
+}
+
+a {
+    color: #7E3517;
+}
+
+.button {
+    display: inline-block;
+    background: #A0522D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
